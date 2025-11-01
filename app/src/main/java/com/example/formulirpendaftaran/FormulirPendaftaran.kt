@@ -92,4 +92,9 @@ fun FormulirPendaftaran(modifier: Modifier){
                 shape = RoundedCornerShape(16.dp),
                 colors = CardDefaults.cardColors(containerColor = Color.White),
                 elevation = CardDefaults.cardElevation(defaultElevation = 8.dp)
-            )
+            ) {
+                Column(
+                    modifier = Modifier
+                        .padding(paddingMedium)
+                        .fillMaxWidth()
+                )
