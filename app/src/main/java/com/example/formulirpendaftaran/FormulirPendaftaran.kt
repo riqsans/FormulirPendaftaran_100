@@ -51,3 +51,8 @@ fun FormulirPendaftaran(modifier: Modifier){
     val buttonHeight = dimensionResource(id = R.dimen.button_height)
 
 
+    // === Background utama ===
+    Surface(
+        color = Color(0xFFF6ECFF),
+        modifier = Modifier.fillMaxSize()
+    )
