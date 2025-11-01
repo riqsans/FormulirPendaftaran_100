@@ -39,3 +39,8 @@ import androidx.compose.ui.unit.sp
 @Composable
 fun FormulirPendaftaran(modifier: Modifier){
     // === State ===
+    var nama by remember { mutableStateOf(TextFieldValue("")) }
+    var alamat by remember { mutableStateOf(TextFieldValue("")) }
+    var jenisKelamin by remember { mutableStateOf("") }
+    var statusPerkawinan by remember { mutableStateOf("") }
+
