@@ -82,3 +82,5 @@ fun FormulirPendaftaran(modifier: Modifier){
                 )
             }
 
+            Spacer(modifier = Modifier.height(40.dp))
+            // ===== CARD FORM =====
