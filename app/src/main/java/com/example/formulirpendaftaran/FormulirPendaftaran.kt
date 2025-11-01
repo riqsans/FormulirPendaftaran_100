@@ -128,3 +128,18 @@ fun FormulirPendaftaran(modifier: Modifier){
 
                     Spacer(modifier = Modifier.height(paddingMedium))
 
+                    // ===== STATUS PERKAWINAN =====
+                    Text("STATUS PERKAWINAN", fontWeight = FontWeight.Bold)
+                    Spacer(modifier = Modifier.height(paddingSmall))
+                    Column(verticalArrangement = Arrangement.spacedBy(paddingSmall)) {
+                        listOf("Janda", "Lajang", "Duda").forEach { opsi ->
+                            Row(verticalAlignment = Alignment.CenterVertically) {
+                                RadioButton(
+                                    selected = statusPerkawinan == opsi,
+                                    onClick = { statusPerkawinan = opsi }
+                                )
+                                Text(opsi)
+                            }
+                        }
+                    }
+
