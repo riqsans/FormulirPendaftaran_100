@@ -68,4 +68,17 @@ fun FormulirPendaftaran(modifier: Modifier){
                     .statusBarsPadding()
                     .background(Color(0xFFB56BFF)) // warna ungu full tepi layar
                     .padding(vertical = paddingLarge)
-            )
+            ) {
+                Text(
+                    text = "Formulir Pendaftaran",
+                    fontSize = dimensionResource(id = R.dimen.font_title).value.sp,
+                    color = Color.White,
+                    fontWeight = FontWeight.Bold,
+                    textAlign = TextAlign.Left,
+                    modifier = Modifier.padding(start = 16.dp)
+                        .fillMaxWidth()
+
+
+                )
+            }
+
