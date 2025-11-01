@@ -61,4 +61,11 @@ fun FormulirPendaftaran(modifier: Modifier){
                 .fillMaxSize()
                 .padding(top = 53.dp),
             horizontalAlignment = Alignment.CenterHorizontally
-        )
+        ) {
+            Box(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .statusBarsPadding()
+                    .background(Color(0xFFB56BFF)) // warna ungu full tepi layar
+                    .padding(vertical = paddingLarge)
+            )
